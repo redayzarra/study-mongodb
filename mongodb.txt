@@ -1,3 +1,9 @@
-Just storing notes on basic MonogoDB commands and what to do in certain 
-situations.
+MonogoDB - NoSQL database just means Not-Only SQL. MonogoDB can use SQL. It
+is a document database. It is stored as BSON but is represented as JSON.
+
+  - JSON is structured as objects containing key-value pairs. These kv pairs
+  can store anything in the value position including other kv pairs. This
+  allows a single document to store all the data together.
+
+  - Data that is accessed together, is stored togther.
 
