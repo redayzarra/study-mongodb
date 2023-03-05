@@ -1,0 +1,3 @@
+Just storing notes on basic MonogoDB commands and what to do in certain 
+situations.
+
