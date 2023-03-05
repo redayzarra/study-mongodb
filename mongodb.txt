@@ -5,5 +5,8 @@ is a document database. It is stored as BSON but is represented as JSON.
   can store anything in the value position including other kv pairs. This
   allows a single document to store all the data together.
 
-  - Data that is accessed together, is stored togther.
+  - Data that is accessed together, is stored togther. You can store any 
+  kind of data you like. Very flexible.
 
+  - MonogoDB are easier to scale and are very cost-effective. They are also
+  faster to query data.
