@@ -54,4 +54,18 @@ $ db.posts.find({title: "Post 1"})  // Find content with the specific title
 
 Basic Commands: Updating content
 
-$ db.posts.updateOne({})
+$ db.posts.updateOne({title: "Post 1"}, {likes: 2})     // Update likes but removes rest of content
+
+$ db.posts.updateOne({title: "Post 1"}, {
+  ... $set: {category: "Tech"} })               // Keeps everything and updates
+
+$ db.posts.updateOne({title: "Post 1"}, {
+  ... $set: {category: "Tech"}}, {upsert: true})      // Update if found, insert if not found
+
+$ db.posts.updateOne({title: "Post 1"}, {
+  ... $inc: {
+  ..... likes: 2} })                            // Increments likes by 2
+
+
+Basic Command: Deleting content
+
