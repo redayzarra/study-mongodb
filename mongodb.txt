@@ -17,6 +17,7 @@ you can download and use the MonogoDB shell to create and manipulate any
 kind of database. The MonogoDB shell allows you to use some CRUD operations, 
 which are Create, Read, Update, Delete.
 
+
 Basic Commands:
 
 $ mongosh --version                 // Shows you the version you have
@@ -35,6 +36,9 @@ $ db.posts.insertOne(<dictionary>)  // Inserts the content to Collection
 
 $ db.posts.insertMany(<dictionary>) // Inserts many posts to Collection
 
+
+Basic Commands: Finding content
+
 $ db.posts.find({category: "News"})     // Shows all documents with News
 
 $ db.posts.find().sort({title: -1})     // Sorts by title in descending order
@@ -45,4 +49,9 @@ $ db.posts.find().limit(2)          // Shows first two documents
 
 $ db.posts.findOne({likes: {$gt: 3}})   // Shows posts with > 3 likes
 
-$ db.
+$ db.posts.find({title: "Post 1"})  // Find content with the specific title
+
+
+Basic Commands: Updating content
+
+$ db.posts.updateOne({})
