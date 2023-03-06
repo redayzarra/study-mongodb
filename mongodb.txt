@@ -69,3 +69,7 @@ $ db.posts.updateOne({title: "Post 1"}, {
 
 Basic Command: Deleting content
 
+$ db.posts.deleteOne({title: "Post 6"})       // Deletes content with title
+
+$ db.posts.deleteMany({category: "Tech"})     // Deltes entire category
+
