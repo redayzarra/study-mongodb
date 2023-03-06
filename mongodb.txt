@@ -71,5 +71,4 @@ Basic Command: Deleting content
 
 $ db.posts.deleteOne({title: "Post 6"})       // Deletes content with title
 
-$ db.posts.deleteMany({category: "Tech"})     // Deltes entire category
-
+$ db.posts.deleteMany({category: "Tech"})     // Deletes entire category
