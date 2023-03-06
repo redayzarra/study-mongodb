@@ -14,4 +14,35 @@ is a document database. It is stored as BSON but is represented as JSON.
 Connection - there are many ways to connect MonogoDB to your local pc. One
 of these ways is with a copy-and-paste key that you can use in your code. Or
 you can download and use the MonogoDB shell to create and manipulate any 
-kind of database.
+kind of database. The MonogoDB shell allows you to use some CRUD operations, 
+which are Create, Read, Update, Delete.
+
+Basic Commands:
+
+$ mongosh --version                 // Shows you the version you have
+
+$ mongosh <url> --username <user>   // Connect with url and username & pass
+
+$ db                                // Show what database we are using
+
+$ show db                           // Shows all available databases
+
+$ use <database>                    // Creates a new database with the name
+
+$ db.createCollection("posts")      // Creates a new Collection
+
+$ db.posts.insertOne(<dictionary>)  // Inserts the content to Collection
+
+$ db.posts.insertMany(<dictionary>) // Inserts many posts to Collection
+
+$ db.posts.find({category: "News"})     // Shows all documents with News
+
+$ db.posts.find().sort({title: -1})     // Sorts by title in descending order
+
+$ db.posts.find({category: "News"}).count()     // Counts how many news posts
+
+$ db.posts.find().limit(2)          // Shows first two documents
+
+$ db.posts.findOne({likes: {$gt: 3}})   // Shows posts with > 3 likes
+
+$ db.
