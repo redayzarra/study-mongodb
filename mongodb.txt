@@ -10,3 +10,8 @@ is a document database. It is stored as BSON but is represented as JSON.
 
   - MonogoDB are easier to scale and are very cost-effective. They are also
   faster to query data.
+
+Connection - there are many ways to connect MonogoDB to your local pc. One
+of these ways is with a copy-and-paste key that you can use in your code. Or
+you can download and use the MonogoDB shell to create and manipulate any 
+kind of database.
